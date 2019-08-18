@@ -1,6 +1,12 @@
 import React from 'react';
 import * as styles from './index.module.scss';
 
-const Header = () => <div className={styles.headerSmall}>Header</div>;
+const App = () => (
+	<div className={styles.headerSmall}>
+		<h1>Title</h1>
+		<h2>Subtitle</h2>
+		<p>This is paragraph acctually</p>
+	</div>
+);
 
-export default Header;
+export default App;
