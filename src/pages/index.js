@@ -1,17 +1,16 @@
 import React from 'react';
+import 'normalize.css';
 import * as styles from './index.module.scss';
+import Header from '../components/Header/Header';
+import Content from '../components/Content/Content';
+import Title from '../components/Title/Title';
 
 const App = () => (
-	<div className={styles.headerSmall}>
-		<h1>Title</h1>
+	<div className={styles.page}>
+		<Title />
 		<div className={styles.wrapper}>
-			<div className={styles.header}>Header</div>
-			<div className={styles.sidebar}>Sidebar</div>
-			<div className={styles.content}>
-				Content
-				<br /> More content than we had before so this column is now quite tall.
-			</div>
-			<div className={styles.footer}>Footer</div>
+			<Header />
+			<Content />
 		</div>
 	</div>
 );

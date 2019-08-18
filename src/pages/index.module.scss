@@ -1,40 +1,11 @@
-.sidebar {
-	grid-area: sidebar;
-}
-
-.content {
-	grid-area: content;
-}
-
-.header {
-	grid-area: header;
-}
-
-.footer {
-	grid-area: footer;
+.page {
+	margin: 0 auto;
+	max-width: 960px;
 }
 
 .wrapper {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: 120px 120px 120px;
-	grid-template-areas: 
-		"....... header header" 
-		"sidebar content content"
-		"footer  footer  footer";
-	background-color: #fff;
-	color: #444;
-}
-
-.box {
-	background-color: #444;
-	color: #fff;
-	border-radius: 5px;
-	padding: 10px;
-	font-size: 150%;
-}
-
-.header,
-.footer {
-	background-color: #999;
+	display: flex;
+	flex-direction: column;
+			max-width: 800px;
+		margin-left: auto;
 }
